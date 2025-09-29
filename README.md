@@ -6,8 +6,6 @@ Welcome to Heart Disease project
 This project predicts the likelihood of heart disease in patients using the **UCI Heart Disease Dataset**.
 It involves **data preprocessing, feature engineering, supervised/unsupervised learning, hyperparameter tuning, and deployment** with a **Streamlit web app**.
 
----
-
 ## 📂 Project Structure
 
 ```
@@ -40,8 +38,6 @@ Heart_Disease_Project/
 │── .gitignore
 ```
 
----
-
 ## ⚙️ Installation
 
 1. **Clone this repository**
@@ -67,11 +63,11 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the Project
+# Running the Project (notebook by notebook)
 
-### 1. Jupyter Notebooks
-
-Each notebook in `notebooks/` covers a project stage:
+# 1. Jupyter Notebooks
+Each notebook in `notebooks/` covers a project requirement:
+from 2.1 : 2.7
 
 * Data preprocessing & cleaning
 * PCA (dimensionality reduction)
@@ -81,8 +77,8 @@ Each notebook in `notebooks/` covers a project stage:
 * Hyperparameter tuning
 
 Run them in order to reproduce results.
+The 
 
----
 
 # 2. Run the Streamlit Web App
 """
@@ -90,8 +86,8 @@ Steps to Run the App:
 1) Open integrated terminal from Ui folder
 2) paste : streamlit run app.py
 """
-
-Then open the link shown in the terminal (`http://localhost:8501`).
+This will open the link(`http://localhost:8501`).
+Enter patient data then get predection.
 
 # Features Considered
 * Age
@@ -108,17 +104,14 @@ Then open the link shown in the terminal (`http://localhost:8501`).
 * Number of Major Vessels (ca)
 * Thal (Normal / Fixed / Reversible defect)
 
----
 
 # Deliverables
+ Cleaned dataset for modeling
+ PCA-transformed dataset and visualizations
+ Feature importance rankings
+ Trained classification & clustering models
+ Optimized final model (`final_model.pkl`)
+ Interactive **Streamlit app** for predictions
+ Documentation
 
-✔ Cleaned dataset for modeling
-✔ PCA-transformed dataset and visualizations
-✔ Feature importance rankings
-✔ Trained classification & clustering models
-✔ Optimized final model (`final_model.pkl`)
-✔ Interactive **Streamlit app** for predictions
-✔ Documentation
-
-Salma Elanany
 
