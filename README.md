@@ -6,9 +6,7 @@ Welcome to Heart Disease project
 This project predicts the likelihood of heart disease in patients using the **UCI Heart Disease Dataset**.
 It involves **data preprocessing, feature engineering, supervised/unsupervised learning, hyperparameter tuning, and deployment** with a **Streamlit web app**.
 
----
-
-## 📂 Project Structure
+# Project Structure
 
 ```
 Heart_Disease_Project/
@@ -42,7 +40,7 @@ Heart_Disease_Project/
 
 ---
 
-## ⚙️ Installation
+# Installation
 
 1. **Clone this repository**
 
@@ -65,90 +63,58 @@ source venv/bin/activate   # On Mac/Linux
 pip install -r requirements.txt
 ```
 
----
 
-## 🚀 Running the Project
+# Running the Project (notebook by notebook)
 
-### 1. Jupyter Notebooks
+# 1. Jupyter Notebooks
+Each notebook in `notebooks/` covers a project requirement:
+from 2.1 : 2.7
 
-Each notebook in `notebooks/` covers a project stage:
-
-* Data preprocessing & cleaning
-* PCA (dimensionality reduction)
-* Feature selection
-* Supervised learning (Logistic Regression, Decision Tree, Random Forest, SVM)
-* Unsupervised learning (K-Means, Hierarchical)
-* Hyperparameter tuning
+ Data preprocessing & cleaning
+ PCA (dimensionality reduction)
+ Feature selection
+ Supervised learning (Logistic Regression, Decision Tree, Random Forest, SVM)
+ Unsupervised learning (K-Means, Hierarchical)
+ Hyperparameter tuning
 
 Run them in order to reproduce results.
 
----
+Each notebook will create new .csv file in order to:
+1) be reused across notebooks
+    (To have tthe ability of taking one step back incase needed)
+2) Keep the original dataset untouched
+    (to avoid any risk of loosing the raw data)
 
-### 2. Run the Streamlit Web App
+# 2. Run the Streamlit Web App
+Steps to Run the App:
+1) Open integrated terminal from Ui folder
+2) paste : streamlit run app.py
 
-Inside the `ui/` folder, run:
+This will open the link(`http://localhost:8501`).
+Enter patient data then get predection.
 
-```bash
-streamlit run app.py
-```
 
-Then open the link shown in the terminal (`http://localhost:8501`).
 
----
+# Features Considered for each patient
+ Age
+ Sex
+ Chest Pain Type
+ Resting Blood Pressure
+ Serum Cholesterol
+ Fasting Blood Sugar
+ Resting ECG Results
+ Max Heart Rate Achieved
+ Exercise Induced Angina
+ ST Depression (Oldpeak)
+ Slope of ST Segment
+ Number of Major Vessels (ca)
+ Thal (Normal / Fixed / Reversible defect)
 
-## 🌍 Deployment with Ngrok (Optional)
-
-If you want to share your app publicly:
-
-1. Install **Ngrok** from [ngrok.com](https://ngrok.com).
-2. Start your Streamlit app locally.
-3. In a new terminal, run:
-
-```bash
-ngrok http 8501
-```
-
-Ngrok will generate a **public URL** you can share.
-
----
-
-## 📊 Features Considered
-
-* Age
-* Sex
-* Chest Pain Type
-* Resting Blood Pressure
-* Serum Cholesterol
-* Fasting Blood Sugar
-* Resting ECG Results
-* Max Heart Rate Achieved
-* Exercise Induced Angina
-* ST Depression (Oldpeak)
-* Slope of ST Segment
-* Number of Major Vessels (ca)
-* Thal (Normal / Fixed / Reversible defect)
-
----
-
-## ✅ Deliverables
-
-✔ Cleaned dataset for modeling
-✔ PCA-transformed dataset and visualizations
-✔ Feature importance rankings
-✔ Trained classification & clustering models
-✔ Optimized final model (`final_model.pkl`)
-✔ Interactive **Streamlit app** for predictions
-✔ Ngrok setup for deployment
-✔ Documentation (this README)
-
----
-
-## 🧑‍💻 Author
-
-👩 Salma Elanany
-
----
-
-👉 This README is **ready to copy-paste** into your `README.md` file.
-
-Do you also want me to write the **requirements.txt** content for you so it’s fully prepared for GitHub upload?
+# Deliverables
+ Cleaned dataset for modeling
+ PCA-transformed dataset and visualizations
+ Feature importance rankings
+ Trained classification & clustering models
+ Optimized final model (`final_model.pkl`)
+ Interactive **Streamlit app** for predictions
+ Documentation
