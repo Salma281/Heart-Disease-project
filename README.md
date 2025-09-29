@@ -64,6 +64,8 @@ pip install -r requirements.txt
 ```
 
 
+
+
 # Running the Project (notebook by notebook)
 
 # 1. Jupyter Notebooks
@@ -85,36 +87,47 @@ Each notebook will create new .csv file in order to:
 2) Keep the original dataset untouched
     (to avoid any risk of loosing the raw data)
 
-# 2. Run the Streamlit Web App
+
+
+# **Steps to Run app.py After Cloning from GitHub**
+
+1) Clone your repo from GitHub (only first time):
+
+    git clone https://github.com/Salma281/Heart-Disease-project.git
+    cd Heart-Disease-project/ui
+
+
+2) Activate your virtual environment (if you set one up):
+
+    venv\Scripts\activate   # Windows
+    source venv/bin/activate   # Mac/Linux
+
+
+3) Install requirements (first time only):
+
+    pip install -r requirements.txt
+
+
+4) Run the app
+    From the ui/ folder:
+
+    streamlit run app.py
+
+# 2. Run the Streamlit Web App (From vsCode)
 Steps to Run the App:
 1) Open integrated terminal from Ui folder
 2) paste : streamlit run app.py
 
-This will open the link(`http://localhost:8501`).
-Enter patient data then get predection.
+    This will open the link(`http://localhost:8501`).
+    Enter patient data then get predection.
 
 
-
-# Features Considered for each patient
- Age
- Sex
- Chest Pain Type
- Resting Blood Pressure
- Serum Cholesterol
- Fasting Blood Sugar
- Resting ECG Results
- Max Heart Rate Achieved
- Exercise Induced Angina
- ST Depression (Oldpeak)
- Slope of ST Segment
- Number of Major Vessels (ca)
- Thal (Normal / Fixed / Reversible defect)
 
 # Deliverables
- Cleaned dataset for modeling
- PCA-transformed dataset and visualizations
- Feature importance rankings
- Trained classification & clustering models
- Optimized final model (`final_model.pkl`)
- Interactive **Streamlit app** for predictions
- Documentation
+ * Cleaned dataset for modeling
+ * PCA-transformed dataset and visualizations
+ * Feature importance rankings
+ * Trained classification & clustering models
+ * Optimized final model (`final_model.pkl`)
+ * Interactive **Streamlit app** for predictions
+ * Documentation
