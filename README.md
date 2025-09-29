@@ -84,36 +84,16 @@ Run them in order to reproduce results.
 
 ---
 
-### 2. Run the Streamlit Web App
-
-Inside the `ui/` folder, run:
-
-```bash
-streamlit run app.py
-```
+# 2. Run the Streamlit Web App
+"""
+Steps to Run the App:
+1) Open integrated terminal from Ui folder
+2) paste : streamlit run app.py
+"""
 
 Then open the link shown in the terminal (`http://localhost:8501`).
 
----
-
-## 🌍 Deployment with Ngrok (Optional)
-
-If you want to share your app publicly:
-
-1. Install **Ngrok** from [ngrok.com](https://ngrok.com).
-2. Start your Streamlit app locally.
-3. In a new terminal, run:
-
-```bash
-ngrok http 8501
-```
-
-Ngrok will generate a **public URL** you can share.
-
----
-
-## 📊 Features Considered
-
+# Features Considered
 * Age
 * Sex
 * Chest Pain Type
@@ -130,7 +110,7 @@ Ngrok will generate a **public URL** you can share.
 
 ---
 
-## ✅ Deliverables
+# Deliverables
 
 ✔ Cleaned dataset for modeling
 ✔ PCA-transformed dataset and visualizations
@@ -138,17 +118,7 @@ Ngrok will generate a **public URL** you can share.
 ✔ Trained classification & clustering models
 ✔ Optimized final model (`final_model.pkl`)
 ✔ Interactive **Streamlit app** for predictions
-✔ Ngrok setup for deployment
-✔ Documentation (this README)
+✔ Documentation
 
----
+Salma Elanany
 
-## 🧑‍💻 Author
-
-👩 Salma Elanany
-
----
-
-👉 This README is **ready to copy-paste** into your `README.md` file.
-
-Do you also want me to write the **requirements.txt** content for you so it’s fully prepared for GitHub upload?
